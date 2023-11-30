@@ -2,23 +2,7 @@ import streamlit as st
 from PIL import Image
 
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
-st.set_page_config(
-    page_title="NICO_BLOG",
-    page_icon=":wave:",
-    layout="wide",
-)
-
-# Apply custom CSS to set the background color
-st.markdown(
-    """
-    <style>
-        body {
-            background-color: #add8e6; /* Light blue color */
-        }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
+st.set_page_config(page_title="NICO_BLOG", page_icon=":wave:", layout="wide")
 
 with st.container():
     left_column, right_column = st.columns((1, 2))
@@ -29,9 +13,9 @@ with st.container():
         st.write("Message me on Gmail [Click here >](https://www.gmail.com/rdelacruz4@ssct.edu.ph)")
 
     with right_column:
-        img = Image.open(r"C:\Users\admin\Desktop\file\look.jpg")
+        img = Image.open("look.jpg")
         st.image(img, width=600, channels="RGB")
-
+        
 with st.container():
     st.write("---")
     st.header("Some information About me:")
