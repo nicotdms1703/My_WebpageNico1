@@ -4,10 +4,6 @@ from PIL import Image
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="NICO_BLOG", page_icon=":wave:", layout="wide")
 
-
-# Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
-st.set_page_config(page_title="NICO_BLOG", page_icon=":wave:", layout="wide")
-
 # Define your background image URL from GitHub repository (use the direct link to the raw image file)
 background_image_url = "https://raw.githubusercontent.com/nicotdms1703/My_WebpageNico1/main/BGW.jpg"
 
