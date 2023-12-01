@@ -4,8 +4,8 @@ from PIL import Image
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="NICO_BLOG", page_icon=":wave:", layout="wide")
 
-# Define your background image URL from GitHub repository (use the direct link to the raw image file)
-background_image_url = "https://raw.githubusercontent.com/nicotdms1703/My_WebpageNico1/main/BGW.jpg"
+# Define your background image URL from GitHub repository
+background_image_url = "https://raw.githubusercontent.com/YourGitHubUsername/YourRepositoryName/main/path/to/your/background_image.jpg"
 
 # Apply the background image using custom CSS
 background_style = f"""
@@ -18,6 +18,7 @@ background_style = f"""
     </style>
 """
 st.markdown(background_style, unsafe_allow_html=True)
+
 with st.container():
     left_column, right_column = st.columns((1, 2))
     with left_column:
@@ -53,6 +54,6 @@ with st.container():
         - Here are some links for samples of what I do [Click link to know more >](https://www.hiveworkshop.com/threads/hivewe-world-editor-0-6.303110/)
         """
     )
-    
+
 with st.container():
-    st.image(r"C:\Users\admin\Desktop\file\Images\look.png", use_column_width=True)
+    st.image("https://raw.githubusercontent.com/YourGitHubUsername/YourRepositoryName/main/path/to/your/background_image.jpg", use_column_width=True)
