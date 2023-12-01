@@ -13,7 +13,7 @@ with st.container():
         st.write("Message me on Gmail [Click here >](https://www.gmail.com/rdelacruz4@ssct.edu.ph)")
 
     with right_column:
-        img = Image.open("look.jpg")
+        img = Image.open("look.png")
         st.image(img, width=600, channels="RGB")
         
 with st.container():
