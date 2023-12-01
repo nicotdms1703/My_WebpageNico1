@@ -15,10 +15,6 @@ style = f"""
             background-size: cover;
             background-repeat: no-repeat;
         }}
-        .stMarkdown, .stText, .stTextInput, .stSelectbox div[role="button"], .css-vfskoc, .stButton>button {{
-            font-family: 'Comic Sans MS', cursive, sans-serif !important;
-            color: black !important;
-        }}
     </style>
 """
 st.markdown(style, unsafe_allow_html=True)
