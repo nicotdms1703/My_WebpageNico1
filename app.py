@@ -7,17 +7,21 @@ st.set_page_config(page_title="NICO_BLOG", page_icon=":wave:", layout="wide")
 # Define your background image URL from GitHub repository (use the direct link to the raw image file)
 background_image_url = "https://raw.githubusercontent.com/nicotdms1703/My_WebpageNico1/main/BGW.jpg"
 
-# Apply the background image using custom CSS
-background_style = f"""
+# Apply the background image and set the font using custom CSS
+style = f"""
     <style>
         .stApp {{
             background-image: url('{background_image_url}');
             background-size: cover;
             background-repeat: no-repeat;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }}
+        .stMarkdown, .stText, .stTextInput {{
+            font-family: 'Comic Sans MS', cursive, sans-serif;
         }}
     </style>
 """
-st.markdown(background_style, unsafe_allow_html=True)
+st.markdown(style, unsafe_allow_html=True)
 
 st.title("Hi, I'm Romel Charlz Nico C. Dela Cruz and Welcome To my Blog :wave:, \n where you'll learn more about me")
 st.header("I'm a 2nd Year College Student in BSCPE Course")
