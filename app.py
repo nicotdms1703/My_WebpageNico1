@@ -57,6 +57,8 @@ with st.container():
         - Here are some links for samples of what I do [Click link to know more >](https://www.hiveworkshop.com/threads/hivewe-world-editor-0-6.303110/)
         """
     )
+with st.container():
+    st.image(r"C:\Users\admin\Desktop\file\Images\look.png", use_column_width=True)
 
 with st.container():
     st.image(r"https://raw.githubusercontent.com/YourGitHubUsername/YourRepositoryName/main/path/to/your/background_image.jpg", use_column_width=True)
