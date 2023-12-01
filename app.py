@@ -7,8 +7,8 @@ st.set_page_config(page_title="NICO_BLOG", page_icon=":wave:", layout="wide")
 # Define your background image URL from GitHub repository (use the direct link to the raw image file)
 background_image_url = "https://raw.githubusercontent.com/nicotdms1703/My_WebpageNico1/main/BGW.jpg"
 
-# Apply the background image and set the font using custom CSS
-style = f"""
+# Apply the background image using custom CSS
+background_style = f"""
     <style>
         .stApp {{
             background-image: url('{background_image_url}');
@@ -17,20 +17,20 @@ style = f"""
         }}
     </style>
 """
-st.markdown(style, unsafe_allow_html=True)
+st.markdown(background_style, unsafe_allow_html=True)
 
 st.title("Hi, I'm Romel Charlz Nico C. Dela Cruz and Welcome To my Blog :wave:, \n where you'll learn more about me")
 st.header("I'm a 2nd Year College Student in BSCPE Course")
-st.subheader("I'm learning how to code and program, since this is the field that I'm best at")
-st.subheader("Message me on Gmail [Click here >](https://www.gmail.com/rdelacruz4@ssct.edu.ph)")
+st.write("I'm learning how to code and program, since this is the field that I'm best at")
+st.write("Message me on Gmail [Click here >](https://www.gmail.com/rdelacruz4@ssct.edu.ph)")
 
 img = Image.open("look.png")
 st.image(img, width=600, channels="RGB")
 
 st.write("---")
 st.header("Some information About me:")
-st.subheader("##")
-st.subheader(
+st.write("##")
+st.write(
     """
     - I'm a 2nd year irregular student who transferred courses from Bachelor of Science in Electronic Engineering (BSECE) to Bachelor of Science in Computer Engineering (BSCpE).
     - As a second-year irregular student, my academic journey has taken a fascinating turn, marked by a significant transition from my initial pursuit of a Bachelor of Science in Electronic Engineering (BSECE) to a dynamic new path in the field of Bachelor of Science in Computer Engineering (BSCpE).
@@ -41,8 +41,8 @@ st.subheader(
 )
 
 st.header("\n More Story about me:")
-st.subheader("##")
-st.subheader(
+st.write("##")
+st.write(
     """
     - In the past, my creative endeavors found a unique outlet as I immersed myself in the world of Warcraft 3 World Editor. This engaging platform became the canvas for my imaginative pursuits, where I delved into the intricate art of encoding triggers and crafting meticulously designed maps.
     - My passion for creating immersive gaming experiences reached new heights as I harnessed the tools provided by the World Editor to breathe life into custom scenarios and trigger-based events within the Warcraft 3 universe.
