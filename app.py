@@ -1,6 +1,16 @@
 import streamlit as st
 from PIL import Image
 
+page_bg_img = """
+<style>
+[data-testid="stAppViewContainer"] { 
+background-image: url("https://unsplash.com/photos/a-red-cabin-in-the-middle-of-a-snowy-forest-B84hI73OPGI")
+background-size: cover;
+}
+</style>
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="NICO_BLOG", page_icon=":wave:", layout="wide")
 
