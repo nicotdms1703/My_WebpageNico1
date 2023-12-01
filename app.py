@@ -4,8 +4,12 @@ from PIL import Image
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="NICO_BLOG", page_icon=":wave:", layout="wide")
 
-# Define your background image URL from GitHub repository
-background_image_url = "https://github.com/nicotdms1703/My_WebpageNico1/blob/main/BGW.jpg"
+
+# Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
+st.set_page_config(page_title="NICO_BLOG", page_icon=":wave:", layout="wide")
+
+# Define your background image URL from GitHub repository (use the direct link to the raw image file)
+background_image_url = "https://raw.githubusercontent.com/nicotdms1703/My_WebpageNico1/main/BGW.jpg"
 
 # Apply the background image using custom CSS
 background_style = f"""
@@ -18,7 +22,6 @@ background_style = f"""
     </style>
 """
 st.markdown(background_style, unsafe_allow_html=True)
-
 with st.container():
     left_column, right_column = st.columns((1, 2))
     with left_column:
