@@ -41,4 +41,4 @@ with st.container():
     )
 
 with st.container():
-    st.image(r"C:\Users\admin\Desktop\file\Images\look.jpg", use_column_width=True)
+    st.image(r"C:\Users\admin\Desktop\file\Images\look.png", use_column_width=True)
