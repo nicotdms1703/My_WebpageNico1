@@ -15,9 +15,11 @@ style = f"""
             background-size: cover;
             background-repeat: no-repeat;
             font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: black;
         }}
         .stMarkdown, .stText, .stTextInput {{
             font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: black;
         }}
     </style>
 """
