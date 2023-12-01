@@ -15,6 +15,9 @@ background_style = f"""
             background-size: cover;
             background-repeat: no-repeat;
         }}
+        .css-17eq0hr, .css-1v1k8g1, .css-1be9khp {{
+            color: black !important;
+        }}
     </style>
 """
 st.markdown(background_style, unsafe_allow_html=True)
