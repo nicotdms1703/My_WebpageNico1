@@ -14,12 +14,10 @@ style = f"""
             background-image: url('{background_image_url}');
             background-size: cover;
             background-repeat: no-repeat;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            color: black;
         }}
-        .stMarkdown, .stText, .stTextInput {{
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            color: black;
+        .stMarkdown, .stText, .stTextInput, .stSelectbox div[role="button"], .css-vfskoc, .stButton>button {{
+            font-family: 'Comic Sans MS', cursive, sans-serif !important;
+            color: black !important;
         }}
     </style>
 """
