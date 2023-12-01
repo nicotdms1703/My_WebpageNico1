@@ -60,3 +60,6 @@ with st.container():
 
 with st.container():
     st.image(r"C:\Users\admin\Desktop\file\Images\look.png", use_column_width=True)
+
+with st.container():
+    st.image(r"https://raw.githubusercontent.com/YourGitHubUsername/YourRepositoryName/main/path/to/your/background_image.jpg", use_column_width=True)
