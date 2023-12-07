@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
-st.set_page_config(page_title="NICO'S_BLOG", page_icon=":U+1F338:", layout="wide")
+st.set_page_config(page_title="NICO'S_BLOG", page_icon=":heart:", layout="wide")
 
 # Define your background image URL from GitHub repository (use the direct link to the raw image file)
 background_image_url = "https://raw.githubusercontent.com/nicotdms1703/My_WebpageNico1/main/wall.png"
