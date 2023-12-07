@@ -32,7 +32,7 @@ st.image(img, width=600, channels="RGB")
 
 st.write("---")
 st.header("Some information About me:")
-st.write("##")
+st.subheader("##")
 st.write(
     """
     - I'm a 2nd year irregular student who transferred courses from Bachelor of Science in Electronic Engineering (BSECE) to Bachelor of Science in Computer Engineering (BSCpE).
@@ -44,7 +44,7 @@ st.write(
 )
 
 st.header("\n More Story about me:")
-st.write("##")
+st.subheader("##")
 st.write(
     """
     - In the past, my creative endeavors found a unique outlet as I immersed myself in the world of Warcraft 3 World Editor. This engaging platform became the canvas for my imaginative pursuits, where I delved into the intricate art of encoding triggers and crafting meticulously designed maps.
