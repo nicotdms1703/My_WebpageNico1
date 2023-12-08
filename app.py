@@ -25,7 +25,7 @@ st.markdown(background_style, unsafe_allow_html=True)
 st.title("Hi, I'm Romel Charlz Nico C. Dela Cruz and Welcome To my Blog :wave:, \n where you'll learn more about me")
 st.header("I'm a 2nd Year College Student in BSCPE Course")
 st.subheader("I'm learning how to code and program, since this is the field that I'm best at")
-st.subheader("Message me on Gmail [Click here >](https://www.gmail.com/rdelacruz4@ssct.edu.ph)")
+st.subheader("Message me on Gmail [Click here >](https://www.facebook.com/NICO.TDMS1703)")
 
 img = Image.open("look.png")
 st.image(img, width=600, channels="RGB")
