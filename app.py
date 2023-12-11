@@ -29,9 +29,9 @@ st.markdown(background_style, unsafe_allow_html=True)
 st.sidebar.title("MY CONTENTS")
 
 # Sidebar navigation
-selected_page = st.sidebar.radio("", ["📝 Blog", "📚 My Project"])
+selected_page = st.sidebar.radio("", ["📝 Blog :memo:", "📚 My Project :books:"])
 
-if selected_page == "📝 Blog":
+if selected_page == "📝 Blog :memo:":
     # Blog section
     st.title("Hi, I'm Romel Charlz Nico C. Dela Cruz and Welcome To my Blog :wave:, \n where you'll learn more about me")
     st.header("I'm a 2nd Year College Student in BSCPE Course")
@@ -65,7 +65,7 @@ if selected_page == "📝 Blog":
         """
     )
 
-elif selected_page == "📚 My Project":
+elif selected_page == "📚 My Project :books:":
     # Python Calculator section
     st.title("My Python Projects")
 
@@ -91,4 +91,4 @@ elif selected_page == "📚 My Project":
         else:
             st.error("Division by zero is undefined. Please enter a non-zero value for the second number.")
 
-    st.write(f"Result of
+    st.write(f"Result of {num1} {operation} {num2} is: {result}")
