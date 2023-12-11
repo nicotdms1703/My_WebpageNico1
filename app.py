@@ -2,10 +2,10 @@ import streamlit as st
 from PIL import Image
 
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
-st.set_page_config(page_title="NICO_BLOG", page_icon=":wave:", layout="wide")
+st.set_page_config(page_title="NICO_BLOG", page_icon=":heart:", layout="wide")
 
 # Define your background image URL from GitHub repository (use the direct link to the raw image file)
-background_image_url = "https://raw.githubusercontent.com/nicotdms1703/My_WebpageNico1/main/BGW.jpg"
+background_image_url = "https://raw.githubusercontent.com/nicotdms1703/My_WebpageNico1/main/wall.png"
 
 # Apply the background image using custom CSS
 background_style = f"""
@@ -18,12 +18,18 @@ background_style = f"""
         .css-17eq0hr, .css-1v1k8g1, .css-1be9khp {{
             color: black !important;
         }}
+        .sidebar, .sidebar-content {{
+            background-color: #FFB7C5 !important; /* Cherry Blossom Pink */
+        }}
     </style>
 """
 st.markdown(background_style, unsafe_allow_html=True)
 
+# Add a title above the sidebar
+st.sidebar.title("MY CONTENTS")
+
 # Sidebar navigation
-selected_page = st.sidebar.radio("Navigation", ["Blog", "My Project"])
+selected_page = st.sidebar.radio("", ["Blog", "My Project"])
 
 if selected_page == "Blog":
     # Blog section
@@ -59,11 +65,11 @@ if selected_page == "Blog":
         """
     )
 
-elif selected_page == "My Project":
+elif selected_page == "My Projects":
     # Python Calculator section
-    st.title("My Python Projects")
+    st.title("My Phython Projects")
 
-    st.header("Basic Python Calculator")
+    st.header("Python Calculator")
 
     # Calculator logic
     num1 = st.number_input("Enter the first number", step=1)
