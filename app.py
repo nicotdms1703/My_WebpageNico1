@@ -29,14 +29,14 @@ st.markdown(background_style, unsafe_allow_html=True)
 st.sidebar.title("MY CONTENTS")
 
 # Sidebar navigation
-selected_page = st.sidebar.radio("", ["Blog", "My Project"])
+selected_page = st.sidebar.radio("", ["📝 Blog", "📚 My Project"])
 
-if selected_page == "Blog":
+if selected_page == "📝 Blog":
     # Blog section
     st.title("Hi, I'm Romel Charlz Nico C. Dela Cruz and Welcome To my Blog :wave:, \n where you'll learn more about me")
     st.header("I'm a 2nd Year College Student in BSCPE Course")
     st.write("I'm learning how to code and program, since this is the field that I'm best at")
-    st.write("Message me on Gmail [Click here >](https://www.gmail.com/rdelacruz4@ssct.edu.ph)")
+    st.write("Message me on FaceBook [Click here >](https://www.facebook.com/NICO.TDMS1703)")
 
     img = Image.open("look.png")
     st.image(img, width=600, channels="RGB")
@@ -65,7 +65,7 @@ if selected_page == "Blog":
         """
     )
 
-elif selected_page == "My Project":
+elif selected_page == "📚 My Project":
     # Python Calculator section
     st.title("My Python Projects")
 
@@ -91,4 +91,4 @@ elif selected_page == "My Project":
         else:
             st.error("Division by zero is undefined. Please enter a non-zero value for the second number.")
 
-    st.write(f"Result of {num1} {operation} {num2} is: {result}")
+    st.write(f"Result of
