@@ -2,10 +2,10 @@ import streamlit as st
 from PIL import Image
 
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
-st.set_page_config(page_title="NICO_BLOG", page_icon=":heart:", layout="wide")
+st.set_page_config(page_title="NICO_BLOG", page_icon=":wave:", layout="wide")
 
 # Define your background image URL from GitHub repository (use the direct link to the raw image file)
-background_image_url = "https://raw.githubusercontent.com/nicotdms1703/My_WebpageNico1/main/wall.png"
+background_image_url = "https://raw.githubusercontent.com/nicotdms1703/My_WebpageNico1/main/BGW.jpg"
 
 # Apply the background image using custom CSS
 background_style = f"""
@@ -65,11 +65,11 @@ if selected_page == "Blog":
         """
     )
 
-elif selected_page == "My Projects":
+elif selected_page == "My Project":
     # Python Calculator section
-    st.title("My Phython Projects")
+    st.title("My Python Projects")
 
-    st.header("Python Calculator")
+    st.header("Basic Python Calculator")
 
     # Calculator logic
     num1 = st.number_input("Enter the first number", step=1)
