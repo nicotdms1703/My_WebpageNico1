@@ -2,10 +2,10 @@ import streamlit as st
 from PIL import Image
 
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
-st.set_page_config(page_title="NICO'S_BLOG", page_icon=":heart:", layout="wide")
+st.set_page_config(page_title="NICO_BLOG", page_icon=":wave:", layout="wide")
 
 # Define your background image URL from GitHub repository (use the direct link to the raw image file)
-background_image_url = "https://raw.githubusercontent.com/nicotdms1703/My_WebpageNico1/main/wall.png"
+background_image_url = "https://raw.githubusercontent.com/nicotdms1703/My_WebpageNico1/main/BGW.jpg"
 
 # Apply the background image using custom CSS
 background_style = f"""
@@ -22,39 +22,67 @@ background_style = f"""
 """
 st.markdown(background_style, unsafe_allow_html=True)
 
-st.title("Hi, I'm Romel Charlz Nico C. Dela Cruz and Welcome To my Blog :wave:, \n where you'll learn more about me")
-st.header("I'm a 2nd Year College Student in BSCPE Course")
-st.subheader("I'm learning how to code and program, since this is the field that I'm best at")
-st.write("Message me on Gmail [Click here >](https://www.facebook.com/NICO.TDMS1703)")
+# Sidebar navigation
+selected_page = st.sidebar.radio("Navigation", ["Blog", "My Project"])
 
-img = Image.open("look.png")
-st.image(img, width=600, channels="RGB")
+if selected_page == "Blog":
+    # Blog section
+    st.title("Hi, I'm Romel Charlz Nico C. Dela Cruz and Welcome To my Blog :wave:, \n where you'll learn more about me")
+    st.header("I'm a 2nd Year College Student in BSCPE Course")
+    st.write("I'm learning how to code and program, since this is the field that I'm best at")
+    st.write("Message me on Gmail [Click here >](https://www.gmail.com/rdelacruz4@ssct.edu.ph)")
 
-st.write("---")
-st.header("Some information About me:")
-st.subheader("##")
-st.write(
-    """
-    - I'm a 2nd year irregular student who transferred courses from Bachelor of Science in Electronic Engineering (BSECE) to Bachelor of Science in Computer Engineering (BSCpE).
-    - As a second-year irregular student, my academic journey has taken a fascinating turn, marked by a significant transition from my initial pursuit of a Bachelor of Science in Electronic Engineering (BSECE) to a dynamic new path in the field of Bachelor of Science in Computer Engineering (BSCpE).
-    - This decision to shift courses reflects not just a change in academic focus but a deliberate choice to explore and align my educational journey with the evolving landscape of technology.
-    - As a newcomer to the vast and ever-evolving field of computing, I find myself on an exhilarating exploration eager to unravel the intricacies that span the entire spectrum of this technological landscape.
-    - My journey commences with a keen interest in programming, where I am navigating through the diverse languages and frameworks that serve as the building blocks for creating innovative software solutions.
-    """
-)
+    img = Image.open("look.png")
+    st.image(img, width=600, channels="RGB")
 
-img = Image.open("lo.png")
-st.image(img, width=600, channels="RGB")
+    st.write("---")
+    st.header("Some information About me:")
+    st.write("##")
+    st.write(
+        """
+        - I'm a 2nd year irregular student who transferred courses from Bachelor of Science in Electronic Engineering (BSECE) to Bachelor of Science in Computer Engineering (BSCpE).
+        - As a second-year irregular student, my academic journey has taken a fascinating turn, marked by a significant transition from my initial pursuit of a Bachelor of Science in Electronic Engineering (BSECE) to a dynamic new path in the field of Bachelor of Science in Computer Engineering (BSCpE).
+        - This decision to shift courses reflects not just a change in academic focus but a deliberate choice to explore and align my educational journey with the evolving landscape of technology.
+        - As a newcomer to the vast and ever-evolving field of computing, I find myself on an exhilarating exploration eager to unravel the intricacies that span the entire spectrum of this technological landscape.
+        - My journey commences with a keen interest in programming, where I am navigating through the diverse languages and frameworks that serve as the building blocks for creating innovative software solutions.
+        """
+    )
 
-st.header("\n More Story about me:")
-st.subheader("##")
-st.write(
-    """
-    - In the past, my creative endeavors found a unique outlet as I immersed myself in the world of Warcraft 3 World Editor. This engaging platform became the canvas for my imaginative pursuits, where I delved into the intricate art of encoding triggers and crafting meticulously designed maps.
-    - My passion for creating immersive gaming experiences reached new heights as I harnessed the tools provided by the World Editor to breathe life into custom scenarios and trigger-based events within the Warcraft 3 universe.
-    - Upon completing my masterpieces, the natural next step was to share them with the vibrant community of gaming enthusiasts. HIVEWORKSHOP.COM emerged as the go-to platform for this purpose, providing a collaborative space where creators from around the world converged to showcase their creations.
-    - Here are some links for samples of what I do [Click link to know more >](https://www.hiveworkshop.com/threads/hivewe-world-editor-0-6.303110/)
-    """
-)
+    st.header("\n More Story about me:")
+    st.write("##")
+    st.write(
+        """
+        - In the past, my creative endeavors found a unique outlet as I immersed myself in the world of Warcraft 3 World Editor. This engaging platform became the canvas for my imaginative pursuits, where I delved into the intricate art of encoding triggers and crafting meticulously designed maps.
+        - My passion for creating immersive gaming experiences reached new heights as I harnessed the tools provided by the World Editor to breathe life into custom scenarios and trigger-based events within the Warcraft 3 universe.
+        - Upon completing my masterpieces, the natural next step was to share them with the vibrant community of gaming enthusiasts. HIVEWORKSHOP.COM emerged as the go-to platform for this purpose, providing a collaborative space where creators from around the world converged to showcase their creations.
+        - Here are some links for samples of what I do [Click link to know more >](https://www.hiveworkshop.com/threads/hivewe-world-editor-0-6.303110/)
+        """
+    )
 
-st.image("https://raw.githubusercontent.com/YourGitHubUsername/YourRepositoryName/main/path/to/your/background_image.jpg", use_column_width=True)
+elif selected_page == "My Project":
+    # Python Calculator section
+    st.title("My Python Projects")
+
+    st.header("Basic Python Calculator")
+
+    # Calculator logic
+    num1 = st.number_input("Enter the first number", step=1)
+    num2 = st.number_input("Enter the second number", step=1)
+
+    operation = st.radio("Select operation", ["Addition", "Subtraction", "Multiplication", "Division"])
+
+    result = 0
+
+    if operation == "Addition":
+        result = num1 + num2
+    elif operation == "Subtraction":
+        result = num1 - num2
+    elif operation == "Multiplication":
+        result = num1 * num2
+    elif operation == "Division":
+        if num2 != 0:
+            result = num1 / num2
+        else:
+            st.error("Division by zero is undefined. Please enter a non-zero value for the second number.")
+
+    st.write(f"Result of {num1} {operation} {num2} is: {result}")
