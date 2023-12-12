@@ -91,4 +91,4 @@ elif selected_page == "📚 My Project :books:":
         else:
             st.error("Division by zero is undefined. Please enter a non-zero value for the second number.")
 
-    st.write(f"Result of {num1} {operation} {num2} is: {result}")
+    st.subheader(f"Result of {num1} {operation} {num2} is: {result}")
