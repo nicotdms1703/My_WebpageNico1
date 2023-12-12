@@ -5,7 +5,7 @@ from PIL import Image
 st.set_page_config(page_title="NICO_WEBBLOG", page_icon=":heart:", layout="wide")
 
 # Define your background image URL from GitHub repository (use the direct link to the raw image file)
-background_image_url = "https://raw.githubusercontent.com/nicotdms1703/My_WebpageNico1/main/wall.png"
+background_image_url = "https://raw.githubusercontent.com/nicotdms1703/My_WebpageNico1/main/mo.png"
 
 # Apply the background image using custom CSS
 background_style = f"""
